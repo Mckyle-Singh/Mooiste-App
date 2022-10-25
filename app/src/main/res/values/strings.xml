@@ -13,6 +13,9 @@
     <string name="menu_logout">Logout</string>
     <string name="menu_cart">Cart</string>
     <string name="menu_orders">My Orders</string>
+    <string name="lorem_ipsum">Lorem Ipsum</string>
+    <string name="temp_price">R9.99</string>
+    <string name="temp_qty">1</string>
 
     <string-array name="province">
         <item>Select your Province</item>
