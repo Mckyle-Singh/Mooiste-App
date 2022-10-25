@@ -21,6 +21,7 @@ import androidx.appcompat.widget.AppCompatButton;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
@@ -32,6 +33,9 @@ import com.google.firebase.database.ValueEventListener;
 
 import io.paperdb.Paper;
 import vcpe.st10118615.mooiste.R;
+import vcpe.st10118615.mooiste.admin.AdminHome;
+import vcpe.st10118615.mooiste.admin.AdminLoginActivity;
+import vcpe.st10118615.mooiste.model.Admin;
 import vcpe.st10118615.mooiste.util.Utils;
 
 public class LoginActivity extends AppCompatActivity {
@@ -69,36 +73,36 @@ public class LoginActivity extends AppCompatActivity {
         adminLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                final Admin admin = new Admin();
-//                admin.setEmail("admin@gmail.com");
-//                admin.setName("Admin");
-//                mAuth.createUserWithEmailAndPassword("admin@gmail.com", "admin123")
-//                        .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-//                            @Override
-//                            public void onComplete(@NonNull Task<AuthResult> task) {
-//                                if (task.isSuccessful()) {
-//                                    String currentUserId = FirebaseAuth.getInstance().getCurrentUser().getUid();
-//                                    admin.setId(currentUserId);
-//                                    myRootRef.child("Admin").child(currentUserId).setValue(admin).addOnSuccessListener(new OnSuccessListener<Void>() {
-//                                        @Override
-//                                        public void onSuccess(Void aVoid) {
-//                                            Intent intent = new Intent(LoginActivity.this, AdminHome.class);
-//                                            startActivity(intent);
-//                                            finish();
-//                                        }
-//                                    }).addOnFailureListener(new OnFailureListener() {
-//                                        @Override
-//                                        public void onFailure(@NonNull Exception e) {
-//                                            Log.d(TAG, e.toString());
-//                                        }
-//                                    });
-//                                } else {
-//
-//                                }
-//                            }
-//                        });
-//                Intent intent = new Intent(LoginActivity.this, AdminLoginActivity.class);
-//                startActivity(intent);
+                final Admin admin = new Admin();
+                admin.setEmail("admin@gmail.com");
+                admin.setName("Admin");
+                mAuth.createUserWithEmailAndPassword("admin@gmail.com", "admin123")
+                        .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                            @Override
+                            public void onComplete(@NonNull Task<AuthResult> task) {
+                                if (task.isSuccessful()) {
+                                    String currentUserId = FirebaseAuth.getInstance().getCurrentUser().getUid();
+                                    admin.setId(currentUserId);
+                                    myRootRef.child("Admin").child(currentUserId).setValue(admin).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                        @Override
+                                        public void onSuccess(Void aVoid) {
+                                            Intent intent = new Intent(LoginActivity.this, AdminHome.class);
+                                            startActivity(intent);
+                                            finish();
+                                        }
+                                    }).addOnFailureListener(new OnFailureListener() {
+                                        @Override
+                                        public void onFailure(@NonNull Exception e) {
+                                            Log.d(TAG, e.toString());
+                                        }
+                                    });
+                                } else {
+
+                                }
+                            }
+                        });
+                Intent intent = new Intent(LoginActivity.this, AdminLoginActivity.class);
+                startActivity(intent);
             }
         });
 

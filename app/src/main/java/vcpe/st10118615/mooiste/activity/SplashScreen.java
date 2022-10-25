@@ -8,6 +8,7 @@ import android.os.Handler;
 import androidx.appcompat.app.AppCompatActivity;
 
 import vcpe.st10118615.mooiste.R;
+import vcpe.st10118615.mooiste.admin.AdminHome;
 import vcpe.st10118615.mooiste.util.Utils;
 
 import io.paperdb.Paper;
@@ -34,10 +35,10 @@ public class SplashScreen extends AppCompatActivity {
                         startActivity(new Intent(SplashScreen.this,MainActivity.class));
                         finish();
                     }
-//                    if(temp.equals("admin")){
-//                        startActivity(new Intent(SplashScreen.this, AdminHome.class));
-//                        finish();
-//                    }
+                    if(temp.equals("admin")){
+                        startActivity(new Intent(SplashScreen.this, AdminHome.class));
+                        finish();
+                    }
                 }
                 else{
                     startActivity(new Intent(SplashScreen.this, LoginActivity.class));
