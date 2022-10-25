@@ -7,7 +7,6 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
 
-
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -19,7 +18,59 @@
         android:theme="@style/Theme.Mooiste"
         tools:targetApi="31">
         <activity
+            android:name=".ViewAllProductsActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".NewProductActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".AdminLoginActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".AdminHome"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyD8y-Fz_Vu5toyYAZTvAWNiogJgvbvq0EU" />
+
+        <activity
             android:name=".activity.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Mooiste.NoActionBar" />
+        <activity
+            android:name=".activity.SearchFiltersActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.CustomersOrders"
+            android:exported="true" />
+        <activity
+            android:name=".activity.ProductDetailsActivity"
+            android:exported="true" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.SignupUserActivity" />
+        <activity android:name=".activity.CartActivity" />
+        <activity android:name=".activity.CheckOutActivity" /> <!-- <activity android:name=".Admin.AdminHome" /> -->
+        <!-- <activity android:name=".Admin.AdminLoginActivity" /> -->
+        <activity android:name=".activity.EventLocationActivity" />
+        <activity
+            android:name=".activity.SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
