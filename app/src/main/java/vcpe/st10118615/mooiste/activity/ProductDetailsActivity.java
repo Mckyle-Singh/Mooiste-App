@@ -37,7 +37,8 @@ public class ProductDetailsActivity  extends AppCompatActivity {
         product= (Product) getIntent().getSerializableExtra("product");
         if(product.getPhotoUrl()!= null){
             if(!product.getPhotoUrl().equals("")){
-                Picasso.get().load(product.getPhotoUrl()).placeholder(R.drawable.icon).into(productImg);
+                // TODO RENAME LOGO
+                Picasso.get().load(product.getPhotoUrl()).placeholder(R.drawable.mooiste_clothing_port_elizabeth).into(productImg);
             }
         }
         productName.setText(product.getName());
@@ -101,7 +102,7 @@ public class ProductDetailsActivity  extends AppCompatActivity {
 
         product = new Product();
 
-        order=new Order();
+        order = new Order();
 
         if(Paper.book().read("order")!=null){
             order=Paper.book().read("order");
