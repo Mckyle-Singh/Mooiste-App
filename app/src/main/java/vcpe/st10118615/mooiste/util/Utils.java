@@ -9,7 +9,7 @@ import androidx.core.content.ContextCompat;
 import vcpe.st10118615.mooiste.R;
 
 public class Utils {
-    private static final String TAG = "productArrayList";
+    public static final String TAG = "productArrayList";
 
     public static void statusBarColor(Activity activity) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
