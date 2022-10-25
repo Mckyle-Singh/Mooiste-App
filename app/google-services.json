@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "674769631116",
+    "firebase_url": "https://mooiste-eb1fa-default-rtdb.firebaseio.com",
+    "project_id": "mooiste-eb1fa",
+    "storage_bucket": "mooiste-eb1fa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:674769631116:android:4ec7b287966c3f67d948a9",
+        "android_client_info": {
+          "package_name": "vcpe.st10118615.mooiste"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "674769631116-m40f1rt2hi73q34rmeq4o6h1qrn5j1r3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWYSsPdq9NHxXxG4scPJB3bJgz2LNx9SI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "674769631116-m40f1rt2hi73q34rmeq4o6h1qrn5j1r3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
