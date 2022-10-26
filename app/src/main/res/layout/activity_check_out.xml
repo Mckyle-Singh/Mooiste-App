@@ -12,7 +12,7 @@
         android:id="@+id/relativeLayout1"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="@color/colorPrimary"
+        android:background="@color/colorAccent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -24,7 +24,7 @@
             android:layout_centerVertical="true"
             android:layout_marginStart="20dp"
             android:src="@drawable/ic_back_arrow"
-            app:tint="@color/black" />
+            app:tint="@color/textColorPrimary" />
 
         <TextView
             android:id="@+id/medicine_name"
@@ -32,7 +32,7 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:text="Buy Products"
-            android:textColor="@color/black"
+            android:textColor="@color/textColorPrimary"
             android:textSize="@dimen/toolbar_text_size"
             android:textStyle="bold" />
 
@@ -67,14 +67,14 @@
                         android:id="@+id/card1_t1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="#77000000"
+                        android:textColor="@color/textColorPrimary"
                         android:text="Cost Details"
                         android:textStyle="bold"
                         android:textSize="20sp"/>
                     <TextView
                         android:id="@+id/card1_t2"
                         android:text="Order price"
-                        android:textColor="#CB111111"
+                        android:textColor="@color/textColorPrimary"
                         android:textSize="15dp"
                         android:layout_marginTop="10dp"
                         android:layout_width="wrap_content"
@@ -90,12 +90,12 @@
                         android:layout_alignParentRight="true"
                         android:layout_marginTop="10dp"
                         android:text="00.00"
-                        android:textColor="@color/black"
+                        android:textColor="@color/textColorPrimary"
                         android:textSize="15dp" />
                     <TextView
                         android:id="@+id/card1_t4"
                         android:text="Shipping Charges"
-                        android:textColor="#CB111111"
+                        android:textColor="@color/textColorPrimary"
                         android:textSize="15dp"
                         android:layout_marginTop="10dp"
                         android:layout_width="wrap_content"
@@ -111,13 +111,13 @@
                         android:layout_alignParentRight="true"
                         android:layout_marginTop="10dp"
                         android:text="R10"
-                        android:textColor="@color/black"
+                        android:textColor="@color/textColorPrimary"
                         android:textSize="15dp" />
                     <View
                         android:id="@+id/card1_div"
                         android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
-                        android:background="#C8000000"
+                        android:background="@color/textColorPrimary"
                         android:layout_marginStart="5dp"
                         android:layout_marginEnd="5dp"
                         android:layout_height="1.5px"
@@ -126,7 +126,7 @@
                     <TextView
                         android:id="@+id/card1_t6"
                         android:text="Total Payable"
-                        android:textColor="#CB111111"
+                        android:textColor="@color/textColorPrimary"
                         android:textSize="17dp"
                         android:textStyle="bold"
                         android:layout_marginTop="10dp"
@@ -168,14 +168,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Shipment Details"
-                        android:textColor="#77000000"
+                        android:textColor="@color/textColorPrimary"
                         android:textStyle="bold"
                         android:textSize="20sp"/>
 
                     <TextView
                         android:id="@+id/card2_t4"
                         android:text="Address"
-                        android:textColor="#CB111111"
+                        android:textColor="@color/textColorPrimary"
                         android:textSize="15dp"
                         android:layout_below="@+id/card2_t1"
                         android:layout_marginTop="10dp"
@@ -197,7 +197,7 @@
                     <TextView
                         android:id="@+id/card2_t5"
                         android:text="Comments"
-                        android:textColor="#CB111111"
+                        android:textColor="@color/textColorPrimary"
                         android:textSize="15dp"
                         android:layout_marginTop="10dp"
                         android:layout_width="wrap_content"
@@ -228,7 +228,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
-        android:background="@color/orange">
+        android:background="@color/black">
 
         <TextView
             android:id="@+id/checkout_btn"
@@ -237,7 +237,7 @@
             android:layout_centerInParent="true"
             android:layout_centerVertical="true"
             android:text="Submit Order"
-            android:textColor="@color/white"
+            android:textColor="@color/textColorPrimary"
             android:textSize="23sp"
             android:textStyle="bold" />
 

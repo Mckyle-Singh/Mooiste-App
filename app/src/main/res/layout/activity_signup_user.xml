@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@color/loginPageBackgroundColor"
     tools:context=".activity.SignupUserActivity">
 
     <LinearLayout
@@ -16,21 +16,21 @@
             android:id="@+id/imageView"
             android:layout_width="180dp"
             android:layout_height="140dp"
+            android:layout_gravity="center"
             android:layout_marginTop="30dp"
-            android:src="@drawable/mooiste_clothing_port_elizabeth"
-            android:layout_gravity="center"/>
+            android:src="@drawable/mooiste_clothing_port_elizabeth" />
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginStart="8dp"
             android:layout_marginTop="10dp"
-            android:layout_gravity="center"
             android:layout_marginEnd="8dp"
-            android:text="Sign Up"
             android:fontFamily="@font/lora_bold"
-            android:textColor="@color/black"
+            android:text="Sign Up"
+            android:textColor="@color/textColorPrimary"
             android:textSize="30sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -63,7 +63,7 @@
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
                 android:singleLine="true"
-                android:textColorHint="@color/text_color" />
+                android:textColorHint="@color/textColorPrimary" />
 
             <EditText
                 android:id="@+id/signup_email"
@@ -79,7 +79,7 @@
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
                 android:singleLine="true"
-                android:textColorHint="@color/text_color" />
+                android:textColorHint="@color/textColorPrimary" />
 
 
             <EditText
@@ -96,7 +96,7 @@
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
                 android:singleLine="true"
-                android:textColorHint="@color/text_color" />
+                android:textColorHint="@color/textColorPrimary" />
 
             <EditText
                 android:id="@+id/location_et"
@@ -115,7 +115,8 @@
                 android:paddingTop="5dp"
                 android:paddingRight="10dp"
                 android:paddingBottom="5dp"
-                android:textColorHint="@color/text_color" />
+                android:singleLine="true"
+                android:textColorHint="@color/textColorPrimary" />
 
             <RadioGroup
                 android:id="@+id/radioGroup1"
@@ -123,8 +124,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:weightSum="2"
-                android:layout_marginTop="15dp"
-                >
+                android:layout_marginTop="15dp">
 
                 <RadioButton
                     android:id="@+id/male_radio"
@@ -137,9 +137,8 @@
                     android:background="@drawable/drawable_gender_tab_selector"
                     android:button="@null"
                     android:gravity="center"
-                    android:textColor="@color/white"
-                    android:textStyle="bold"
-                    />
+                    android:textColor="@color/textColorPrimary"
+                    android:textStyle="bold" />
 
                 <RadioButton
                     android:id="@+id/female_radio"
@@ -151,7 +150,7 @@
                     android:background="@drawable/drawable_gender_tab_selector"
                     android:button="@null"
                     android:gravity="center"
-                    android:textColor="@color/white"
+                    android:textColor="@color/textColorPrimary"
                     android:textStyle="bold"/>
             </RadioGroup>
 
@@ -163,7 +162,7 @@
                 android:background="@drawable/button_shape"
                 android:text="Sign Up"
                 android:textAlignment="center"
-                android:textColor="@color/white"
+                android:textColor="@color/textColorPrimary"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
@@ -192,7 +191,7 @@
             android:layout_marginBottom="8dp"
             android:background="@android:color/transparent"
             android:text="Already Have Account ?"
-            android:textColor="@color/black"
+            android:textColor="@color/textColorPrimary"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

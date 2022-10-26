@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@color/loginPageBackgroundColor"
     tools:context=".activity.ProductDetailsActivity">
 
     <ImageView
@@ -15,18 +15,18 @@
         android:layout_marginTop="15dp"
         android:onClick="goBack"
         android:src="@drawable/ic_back_arrow"
-        app:tint="@color/black"/>
+        app:tint="@color/textColorPrimary"/>
 
     <ImageView
         android:id="@+id/product_img"
-        android:layout_width="match_parent"
+        android:layout_width="391dp"
         android:layout_height="wrap_content"
         android:layout_above="@+id/bottom_card"
         android:layout_below="@+id/ic_back"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="-39dp"
         android:layout_marginEnd="20dp"
-        />
+        android:layout_marginBottom="0dp" />
     <androidx.cardview.widget.CardView
         android:id="@+id/bottom_card"
         android:layout_alignParentBottom="true"
@@ -43,7 +43,7 @@
             <TextView
                 android:id="@+id/product_name"
                 android:text="@string/lorem_ipsum"
-                android:textColor="@color/black"
+                android:textColor="@color/textColorPrimary"
                 android:textSize="22sp"
                 android:fontFamily="@font/crimson_text_semibold"
                 android:layout_width="wrap_content"
@@ -51,7 +51,7 @@
             <TextView
                 android:id="@+id/product_description"
                 android:text="@string/lorem_ipsum"
-                android:textColor="@color/black"
+                android:textColor="@color/textColorPrimary"
                 android:textSize="16sp"
                 android:maxLines="3"
                 android:fontFamily="@font/crimson_text_semibold"
@@ -70,7 +70,7 @@
                     android:layout_centerVertical="true"
                     android:fontFamily="@font/crimson_text_semibold"
                     android:text="@string/temp_price"
-                    android:textColor="@color/black"
+                    android:textColor="@color/textColorPrimary"
                     android:textSize="24sp" />
 
 
@@ -86,6 +86,7 @@
                         android:id="@+id/minus_btn"
                         android:textSize="16sp"
                         android:text="-"
+                        android:textColor="@color/textColorPrimary"
                         android:layout_width="30dp"
                         android:gravity="center"
                         android:layout_height="wrap_content"/>
@@ -93,6 +94,7 @@
                         android:id="@+id/quantity_tv"
                         android:textSize="16sp"
                         android:text="@string/temp_qty"
+                        android:textColor="@color/textColorPrimary"
                         android:gravity="center"
                         android:layout_width="30dp"
                         android:layout_height="wrap_content"/>
@@ -100,6 +102,7 @@
                         android:id="@+id/plus_btn"
                         android:textSize="16sp"
                         android:text="+"
+                        android:textColor="@color/textColorPrimary"
                         android:gravity="center"
                         android:layout_width="30dp"
                         android:layout_height="wrap_content"/>
@@ -109,7 +112,7 @@
                     android:id="@+id/add_to_cart_btn"
                     android:layout_width="wrap_content"
                     android:layout_alignParentEnd="true"
-                    app:cardBackgroundColor="@color/black"
+                    app:cardBackgroundColor="@color/textColorPrimary"
                     app:cardCornerRadius="10dp"
                     android:elevation="10dp"
                     android:layout_centerVertical="true"
@@ -133,7 +136,7 @@
         android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
         android:elevation="100dp"
-        android:background="@color/white"
+        android:background="@color/textColorPrimary"
         android:layout_height="20dp"/>
 
 

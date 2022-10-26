@@ -29,7 +29,7 @@
             android:drawableTint="@color/grey"
             android:inputType="text"
             android:maxLines="1"
-            android:textColor="@color/black"
+            android:textColor="@color/textColorPrimary"
             android:textSize="16sp"
             />
     </androidx.cardview.widget.CardView>
@@ -47,8 +47,7 @@
             android:id="@+id/filters_btn"
             android:layout_margin="5dp"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
-            />
+            android:layout_height="40dp" />
     </androidx.cardview.widget.CardView>
 
     <androidx.recyclerview.widget.RecyclerView
@@ -67,7 +66,7 @@
         android:text="No Products found"
         android:textSize="16sp"
         android:visibility="gone"
-        android:textColor="@color/black"
+        android:textColor="@color/textColorPrimary"
         android:layout_centerInParent="true"
         android:layout_gravity="center"
         android:layout_width="wrap_content"

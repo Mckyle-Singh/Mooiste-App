@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@color/loginPageBackgroundColor"
     tools:context=".activity.CartActivity">
 
     <androidx.core.widget.NestedScrollView
@@ -19,7 +19,7 @@
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?actionBarSize"
-                android:background="@color/colorPrimary">
+                android:background="@color/colorAccent">
 
                 <ImageView
                     android:id="@+id/cart_back_arrow"
@@ -29,7 +29,7 @@
                     android:layout_marginStart="20dp"
                     android:src="@drawable/ic_back_arrow"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:tint="@color/black" />
+                    app:tint="@color/textColorPrimary" />
 
                 <TextView
                     android:id="@+id/textView4"
@@ -37,7 +37,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:text="Mooiste"
-                    android:textColor="@color/black"
+                    android:textColor="@color/textColorPrimary"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -49,7 +49,7 @@
                     android:layout_marginEnd="10dp"
                     android:layout_alignParentEnd="true"
                     android:src="@drawable/ic_delete_white_24dp"
-                    app:tint="@color/black"/>
+                    app:tint="@color/textColorPrimary"/>
 
             </RelativeLayout>
 
@@ -63,7 +63,7 @@
                 android:layout_height="wrap_content" />
 
             <View
-                android:background="@color/white"
+                android:background="@color/textColorPrimary"
                 android:layout_width="match_parent"
                 android:layout_marginTop="20dp"
                 android:layout_marginStart="20dp"
@@ -84,7 +84,7 @@
                     android:layout_centerVertical="true"
                     android:fontFamily="@font/crimson_text_semibold"
                     android:text="Bag Total"
-                    android:textColor="@color/black"
+                    android:textColor="@color/textColorPrimary"
                     android:textSize="20sp" />
                 <TextView
                     android:id="@+id/cart_total_price_view"
@@ -94,7 +94,7 @@
                     android:layout_centerVertical="true"
                     android:fontFamily="@font/crimson_text_semibold"
                     android:text="R0.0"
-                    android:textColor="@color/black"
+                    android:textColor="@color/textColorPrimary"
                     android:textSize="20sp" />
 
             </RelativeLayout>
@@ -109,7 +109,7 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/check_out_btn"
                 android:layout_width="match_parent"
-                app:cardBackgroundColor="@color/black"
+                app:cardBackgroundColor="@color/textColorPrimary"
                 app:cardCornerRadius="100dp"
                 android:layout_marginBottom="20dp"
                 android:layout_marginStart="20sp"
@@ -121,7 +121,7 @@
                     android:layout_gravity="center"
                     android:layout_width="wrap_content"
                     android:textStyle="bold"
-                    android:textColor="@color/white"
+                    android:textColor="@color/textColorPrimary"
                     android:layout_height="wrap_content"/>
             </androidx.cardview.widget.CardView>
         </LinearLayout>

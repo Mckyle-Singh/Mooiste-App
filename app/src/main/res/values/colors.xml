@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
+    <color name="black">#FBB8AC</color>
     <color name="white">#FFFFFFFF</color>
     <color name="colorPrimary">#e0e0e0</color>
     <color name="colorPrimaryDark">#e0e0e0</color>
-    <color name="colorAccent">#FF000000</color>
+
+    <color name="textColorPrimary">#442C2E</color>
+    <color name="loginPageBackgroundColor">#FFFFFF</color>
+    <color name="colorAccent">#FEDBD0</color>
 
     <color name="terms_background">#34378B</color>
     <color name="gray">#eaeaea</color>

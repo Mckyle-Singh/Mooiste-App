@@ -60,7 +60,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:text="R12.5"
-                android:textColor="@color/black"
+                android:textColor="@color/textColorPrimary"
                 android:textSize="18sp" />
 
             <TextView
@@ -70,7 +70,7 @@
                 android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
                 android:text="17 Sep 2021 10:12:22 am"
-                android:textColor="@color/black"
+                android:textColor="@color/textColorPrimary"
                 android:textSize="18sp" />
         </RelativeLayout>
     </LinearLayout>

@@ -44,7 +44,7 @@
                 android:layout_centerVertical="true"
                 android:fontFamily="@font/crimson_text_semibold"
                 android:text="lorem ipsum"
-                android:textColor="@color/black"
+                android:textColor="@color/textColorPrimary"
                 android:textSize="20sp" />
 
             <ImageView
@@ -69,7 +69,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:text="R12.5"
-                android:textColor="@color/black"
+                android:textColor="@color/textColorPrimary"
                 android:textSize="18sp" />
 
             <LinearLayout
@@ -79,11 +79,11 @@
                 android:layout_height="wrap_content">
                 <TextView
                     android:id="@+id/minus_btn"
-                    android:textSize="16sp"
+                    android:textSize="20sp"
                     android:text="-"
                     android:background="@drawable/minus_btn_back"
                     android:layout_width="30dp"
-                    android:textColor="@color/black"
+                    android:textColor="@color/textColorPrimary"
                     android:gravity="center"
                     android:layout_height="30dp"/>
                 <TextView
@@ -91,7 +91,7 @@
                     android:textSize="16sp"
                     android:text="1"
                     android:gravity="center"
-                    android:textColor="@color/black"
+                    android:textColor="@color/textColorPrimary"
                     android:layout_width="30dp"
                     android:layout_height="30dp"/>
                 <TextView
@@ -100,7 +100,7 @@
                     android:background="@drawable/round_black"
                     android:text="+"
                     android:gravity="center"
-                    android:textColor="@color/white"
+                    android:textColor="@color/textColorPrimary"
                     android:layout_width="30dp"
                     android:layout_height="30dp"/>
             </LinearLayout>
