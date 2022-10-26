@@ -17,8 +17,7 @@ import vcpe.st10118615.mooiste.util.Utils;
 // TODO REMOVE BRAND AND ADJUST SIZE
 public class SearchFiltersActivity extends AppCompatActivity implements View.OnClickListener {
     TextView clearFilters;
-    LinearLayout categoryBaby, categoryKid, categoryMen, categoryWomen;
-    LinearLayout brandNike, brandAddidas, brandLevis, brandJordan;
+    LinearLayout categoryAccessories, categoryJewellery, categoryClothing;
     LinearLayout sizeRegular, sizePlus, sizeJunior, sizeTall;
 
     @Override
@@ -31,15 +30,9 @@ public class SearchFiltersActivity extends AppCompatActivity implements View.OnC
 
         clearFilters.setOnClickListener(this);
 
-        categoryBaby.setOnClickListener(this);
-        categoryKid.setOnClickListener(this);
-        categoryMen.setOnClickListener(this);
-        categoryWomen.setOnClickListener(this);
-
-        brandNike.setOnClickListener(this);
-        brandAddidas.setOnClickListener(this);
-        brandLevis.setOnClickListener(this);
-        brandJordan.setOnClickListener(this);
+        categoryAccessories.setOnClickListener(this);
+        categoryJewellery.setOnClickListener(this);
+        categoryClothing.setOnClickListener(this);
 
         sizeRegular.setOnClickListener(this);
         sizePlus.setOnClickListener(this);
@@ -50,15 +43,9 @@ public class SearchFiltersActivity extends AppCompatActivity implements View.OnC
 
     private void initAll() {
         clearFilters = findViewById(R.id.id_clear_btn);
-        categoryBaby = findViewById(R.id.cat_baby);
-        categoryKid = findViewById(R.id.cat_kids);
-        categoryMen = findViewById(R.id.cat_men);
-        categoryWomen = findViewById(R.id.cat_wemen);
-
-        brandNike = findViewById(R.id.brand_nike);
-        brandAddidas = findViewById(R.id.brand_addidas);
-        brandLevis = findViewById(R.id.brand_levis);
-        brandJordan = findViewById(R.id.brand_jordan);
+        categoryAccessories = findViewById(R.id.cat_accessory);
+        categoryJewellery = findViewById(R.id.cat_jewellery);
+        categoryClothing = findViewById(R.id.cat_clothing);
 
         sizeRegular = findViewById(R.id.size_regular);
         sizePlus = findViewById(R.id.size_plus);
@@ -75,51 +62,21 @@ public class SearchFiltersActivity extends AppCompatActivity implements View.OnC
         int id = view.getId();
 
         switch (id) {
-            case R.id.cat_baby:
-                HomeFragment.category = "Baby";
+            case R.id.cat_accessory:
+                HomeFragment.category = "Accessory";
                 HomeFragment.isCategorySelected = true;
                 HomeFragment.isFiltersApplied = true;
                 finish();
                 break;
-            case R.id.cat_kids:
-                HomeFragment.category = "Kids";
+            case R.id.cat_jewellery:
+                HomeFragment.category = "Jewellery";
                 HomeFragment.isCategorySelected = true;
                 HomeFragment.isFiltersApplied = true;
                 finish();
                 break;
-            case R.id.cat_men:
-                HomeFragment.category = "Men";
+            case R.id.cat_clothing:
+                HomeFragment.category = "Clothing";
                 HomeFragment.isCategorySelected = true;
-                HomeFragment.isFiltersApplied = true;
-                finish();
-                break;
-            case R.id.cat_wemen:
-                HomeFragment.category = "Women";
-                HomeFragment.isCategorySelected = true;
-                HomeFragment.isFiltersApplied = true;
-                finish();
-                break;
-            case R.id.brand_nike:
-                HomeFragment.brand = "Nike";
-                HomeFragment.isBrandSelected = true;
-                HomeFragment.isFiltersApplied = true;
-                finish();
-                break;
-            case R.id.brand_addidas:
-                HomeFragment.brand = "Adidas";
-                HomeFragment.isBrandSelected = true;
-                HomeFragment.isFiltersApplied = true;
-                finish();
-                break;
-            case R.id.brand_levis:
-                HomeFragment.brand = "Levi’s";
-                HomeFragment.isBrandSelected = true;
-                HomeFragment.isFiltersApplied = true;
-                finish();
-                break;
-            case R.id.brand_jordan:
-                HomeFragment.brand = "Jordan";
-                HomeFragment.isBrandSelected = true;
                 HomeFragment.isFiltersApplied = true;
                 finish();
                 break;

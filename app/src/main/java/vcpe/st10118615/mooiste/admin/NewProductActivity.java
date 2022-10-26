@@ -36,8 +36,7 @@ import vcpe.st10118615.mooiste.model.Product;
 import vcpe.st10118615.mooiste.util.Utils;
 
 public class NewProductActivity extends AppCompatActivity {
-    String[] categoriesList = {"Select Category", "Baby", "Kids", "Men", "Women"};
-    String[] brandsList = {"Select Brand Name", "Nike", "Adidas", "Levi’s", "Jordan"};
+    String[] categoriesList = {"Select Category", "Accessory", "Jewellery", "Clothing"};
     String[] sizeTypeList = {"Select Size Type", "Regular", "Plus", "Juniors", "Tall"};
     String[] sizeList = {"Select Size", "M", "XL", "S", "2XL"};
     Spinner categorySpinner, brandSpinner, sizeTypeSpinner, sizeSpinner;
@@ -68,10 +67,6 @@ public class NewProductActivity extends AppCompatActivity {
         categoryAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         categorySpinner.setAdapter(categoryAdapter);
 
-        ArrayAdapter<String> brandAdapter = new ArrayAdapter<String>(NewProductActivity.this, android.R.layout.simple_list_item_1, brandsList);
-        brandAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        brandSpinner.setAdapter(brandAdapter);
-
         ArrayAdapter<String> sizeTypeAdapter = new ArrayAdapter<String>(NewProductActivity.this, android.R.layout.simple_list_item_1, sizeTypeList);
         sizeTypeAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         sizeTypeSpinner.setAdapter(sizeTypeAdapter);
@@ -94,16 +89,7 @@ public class NewProductActivity extends AppCompatActivity {
             public void onNothingSelected(AdapterView<?> parent) {
             }
         });
-        brandSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                brand = String.valueOf(parent.getItemAtPosition(position));
-            }
 
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-            }
-        });
         sizeTypeSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -196,7 +182,6 @@ public class NewProductActivity extends AppCompatActivity {
 
     private void initAll() {
         categorySpinner = findViewById(R.id.product_category_Spinner);
-        brandSpinner = findViewById(R.id.product_brand_Spinner);
         sizeTypeSpinner = findViewById(R.id.product_size_type_Spinner);
         sizeSpinner = findViewById(R.id.product_size_Spinner);
         progressBar = findViewById(R.id.progress_bar);
