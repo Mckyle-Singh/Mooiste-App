@@ -52,7 +52,7 @@ public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.MyView
             }
         }
         holder.name.setText(product.getName());
-        holder.price.setText("R"+product.getPrice());
+        holder.price.setText("R "+product.getPrice());
 
         holder.layout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -81,7 +81,7 @@ public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.MyView
             super(itemView);
             layout = itemView.findViewById(R.id.layout);
             productImg = itemView.findViewById(R.id.category_image);
-            name = itemView.findViewById(R.id.product_brand_name);
+            name = itemView.findViewById(R.id.product_name);
             price = itemView.findViewById(R.id.price_tv);
         }
     }

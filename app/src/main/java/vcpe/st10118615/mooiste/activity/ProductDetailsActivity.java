@@ -43,7 +43,7 @@ public class ProductDetailsActivity  extends AppCompatActivity {
         }
         productName.setText(product.getName());
         productDescription.setText(product.getDescription());
-        price.setText("R"+product.getPrice());
+        price.setText("R "+product.getPrice());
     }
 
     private void ClickListeners() {
