@@ -19,13 +19,15 @@
 
     <ImageView
         android:id="@+id/product_img"
-        android:layout_width="391dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/bottom_card"
         android:layout_below="@+id/ic_back"
-        android:layout_marginStart="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
         android:layout_marginTop="-39dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginEnd="0dp"
         android:layout_marginBottom="0dp" />
     <androidx.cardview.widget.CardView
         android:id="@+id/bottom_card"

@@ -37,7 +37,7 @@ import vcpe.st10118615.mooiste.util.Utils;
 
 public class NewProductActivity extends AppCompatActivity {
     String[] categoriesList = {"Select Category", "Accessory", "Jewellery", "Clothing"};
-    String[] sizeTypeList = {"Select Size Type", "Regular", "Plus", "Juniors", "Tall"};
+    String[] sizeTypeList = {"Select Size Type", "Regular", "Plus", "Tall"};
     String[] sizeList = {"Select Size", "M", "XL", "S", "2XL"};
     Spinner categorySpinner, brandSpinner, sizeTypeSpinner, sizeSpinner;
     String category = "";

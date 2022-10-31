@@ -36,7 +36,7 @@ public class SearchFiltersActivity extends AppCompatActivity implements View.OnC
 
         sizeRegular.setOnClickListener(this);
         sizePlus.setOnClickListener(this);
-        sizeJunior.setOnClickListener(this);
+//        sizeJunior.setOnClickListener(this);
         sizeTall.setOnClickListener(this);
 
     }
@@ -49,7 +49,7 @@ public class SearchFiltersActivity extends AppCompatActivity implements View.OnC
 
         sizeRegular = findViewById(R.id.size_regular);
         sizePlus = findViewById(R.id.size_plus);
-        sizeJunior = findViewById(R.id.size_junior);
+//        sizeJunior = findViewById(R.id.size_junior);
         sizeTall = findViewById(R.id.size_tall);
     }
 
@@ -90,11 +90,11 @@ public class SearchFiltersActivity extends AppCompatActivity implements View.OnC
                 HomeFragment.iSizeTypeSelected = true;
                 HomeFragment.isFiltersApplied = true;
                 finish();
-            case R.id.size_junior:
-                HomeFragment.sizeType = "Juniors";
-                HomeFragment.iSizeTypeSelected = true;
-                HomeFragment.isFiltersApplied = true;
-                finish();
+//            case R.id.size_junior:
+//                HomeFragment.sizeType = "Juniors";
+//                HomeFragment.iSizeTypeSelected = true;
+//                HomeFragment.isFiltersApplied = true;
+//                finish();
             case R.id.size_tall:
                 HomeFragment.sizeType = "Tall";
                 HomeFragment.iSizeTypeSelected = true;

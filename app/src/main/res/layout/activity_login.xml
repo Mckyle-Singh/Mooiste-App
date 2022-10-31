@@ -24,14 +24,15 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="15dp"
                 android:layout_height="35dp">
+
                 <ImageView
                     android:id="@+id/manager_portal_btn"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_width="47dp"
+                    android:layout_height="50dp"
                     android:layout_gravity="center"
-                    android:src="@drawable/ic_manager"
-                    android:padding="5dp"
                     android:background="@android:color/transparent"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_manager"
                     android:text="Admin Portal"
                     android:textColor="@color/textColorPrimary"
                     android:textStyle="bold" />
